@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Dice Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="Assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="container-fluid">
+        <div class="player-1-total-wins wins-counter">
+            <h5>Total Wins</h5>
+            <h2>0</h2>
+        </div>
+        <div class="player-1 background-switch">
+            <div>
+                <h1>PLAYER 1</h1>
+                <h1 class="playerScore--1">0</h1>
+            </div>
+            <div class="winner-1">
+                <h6 class="hid-me"></h6>
+            </div>
+            <div class="currentScore--1">
+                <h5>CURRENT</h5>
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <div class="middle-container">
+            <button class="game-rules">GAME RULES</button>
+            <div class="new-game">
+                <h6>▶️ NEW GAME</h6>
+            </div>
+            <div class="play-again">
+                <h6>🔄️ PLAY AGAIN</h6>
+            </div>
+            <div class="dice-img">
+                <img src="Assets/images/dice6.png" width="80px" height="80px" alt="dice-image">
+            </div>
+            <div class="dice-throw">
+                <h6>🎲 ROLL DICE</h6>
+            </div>
+            <div class="hold-score">
+                <h6>📥 HOLD</h6>
+            </div>
+        </div>
+
+        <div class="player-2">
+            <div>
+                <h1>PLAYER 2</h1>
+                <h1 class="playerScore--2">0</h1>
+            </div>
+            <div class="winner-2">
+                <h6 class="hid-me"></h6>
+            </div>
+            <div class="currentScore--2">
+                <h5>CURRENT</h5>
+                <h2>0</h2>
+            </div>
+        </div>
+
+        <div class="player-2-total-wins wins-counter">
+            <h5>Total Wins</h5>
+            <h2>0</h2>
+        </div>
+    </section>
+
+    <section class="new-game-modal-window hid-me">
+        <div class="modal--1">
+            <div class="new-close-btn">✖️</div>
+            <h5>Alright players, lets get that your precious name!</h5>
+            <br>
+            <label class="label">PLAYER ONE:</label><br>
+            <input class="first-player-name" type="text" value="" name="" size="40rem" required
+                placeholder="Name or nickname, I really don't care. 😏">
+            <br><br>
+            <label class="label">PLAYER TWO:</label><br>
+            <input class="second-player-name" type="text" value="" name="" size="40rem" required
+                placeholder="Name or nickname, I really don't care. 😏">
+            <br><br>
+            <button class="submit-btn">SUBMIT</button>
+        </div>
+    </section>
+
+    <section class="game-rules-modal-window hid-me">
+        <div class="modal--2">
+            <div class="rules-close-btn">✖️</div>
+            <h5>Here are the rules of this game. Have fun! 😎</h5>
+            <ol>
+                <li>Player one always start a new game or a replay.</li>
+                <li>Numbers gotten from the random dice throw are added to the current player score.</li>
+                <li>If the dice number is 1, the current score is reduced to zero and the turn is passed to the next
+                    player.</li>
+                <li>A player can choose to hold or save his current score by clicking on the "hold" button.</li>
+                <li>If the current player chooses to hold his score, the turn is passed to the next player.</li>
+                <li>The first player that is able to hold up to a 100 point score wins the game.</li>
+            </ol>
+        </div>
+    </section>
+
+    <div class="overlay hid-me"></div>
+    <script src="Assets/javascript/index.js"></script>
+</body>
+
+</html>
