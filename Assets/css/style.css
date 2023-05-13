@@ -75,7 +75,6 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-content: center;
   align-items: center;
   background-color: rgba(43, 101, 102, 1);
   text-align: center;
@@ -118,7 +117,6 @@ h6 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: center;
   margin: 0;
   padding: 5px;
   min-height: 70vh;
