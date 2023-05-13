@@ -218,6 +218,10 @@ h6 {
   min-width: 400px;
 }
 
+::marker {
+  color: yellow;
+}
+
 li {
   color: rgb(43, 101, 102);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
