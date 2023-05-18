@@ -103,6 +103,7 @@ h6 {
 .winner-1 > h6,
 .winner-2 > h6 {
   font-family: "Bruno Ace SC", cursive;
+  color: #fffd55;
 }
 
 .playerScore--1,
